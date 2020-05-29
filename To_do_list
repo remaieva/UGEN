@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>To do list</title>
+  <style>
+      h1 {
+          text-align: center;
+      }
+      ul li {
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em 2em;
+        margin: .5em 0;
+        background: rgb(102, 224, 233);
+        text-decoration: none;
+      }
+      input:checked + label {
+        text-decoration: line-through;
+      }
+      li:hover {
+          background: rgb(0, 255, 234);
+      }
+      button {
+          background-color: rgb(101, 247, 234);
+      }
+  </style>
+ </head>
+ <body>
+  <h1>To do list</h1>
+  <div>
+      <ul>
+        <li><input type="checkbox" id="a"> <label for="a">Зареєтруватися на UGEN</label> <button> del</button></li>
+        <li><input type="checkbox" id="b"> <label for="b">Подивитися всі вебінари від компаній</label> <button>del</button></li>
+        <li><input type="checkbox" id="c"> <label for="c">Виконати усі тест кейси</label> <button>del</button></li>
+        <li><input type="checkbox" id="d"> <label for="d">Виграти призи</label> <button>del</button></li>
+      </ul>
+  </div>
+ </body>
+</html>
